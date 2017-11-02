@@ -164,6 +164,8 @@
     )
     Begin {
         Write-Verbose "[BEGIN]Starting Function"
+        #Adding assembly for drawing items.
+        Add-Type -AssemblyName presentationframework
         #region Helper Functions        
         Function New-SquareTreeMapData {
             [cmdletbinding()]
